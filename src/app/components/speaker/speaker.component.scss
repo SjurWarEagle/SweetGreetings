@@ -1,0 +1,13 @@
+.content {
+  display: table;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+}
+
+.emote-image {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
