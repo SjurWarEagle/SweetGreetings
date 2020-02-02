@@ -1,3 +1,5 @@
-<div class="content" [@openClose]="isOpen ? 'open' : 'closed'">
-  <img src="./assets/emotes/1.png" class="emote-image" >
+<div
+  *ngIf="quote"
+  class="content" [@openClose]="isOpen ? 'open' : 'closed'">
+  <img src="./assets/emotes/{{quote.image}}" alt="emote image" class="emote-image">
 </div>

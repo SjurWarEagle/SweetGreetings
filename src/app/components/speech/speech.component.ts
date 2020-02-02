@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {animate, state, style, transition, trigger} from "@angular/animations";
+import {IQuote} from "../models/i-quote";
 
 @Component({
   selector: 'app-speech',
@@ -38,11 +39,11 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
 })
 export class SpeechComponent implements OnInit {
 
-  public author = 'Henry Ford';
-  public quote = 'Weil Denken die schwerste Arbeit ist, die es gibt, beschäftigen sich auch nur wenige damit.';
-
   @Input()
   public isOpen;
+
+  @Input()
+  public quote: IQuote;
 
   constructor() {
   }

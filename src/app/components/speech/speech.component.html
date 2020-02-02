@@ -1,6 +1,8 @@
-<div class="bubble" [@openClose]="isOpen ? 'open' : 'closed'">
+<div
+  *ngIf="quote"
+  class="bubble" [@openClose]="isOpen ? 'open' : 'closed'">
   <div class="content" [fittext]="true" [activateOnResize]="true" [modelToWatch]="isOpen">
-    {{quote}}
+    {{quote.text}}
   </div>
-  <div class="author">-{{author}}</div>
+  <div class="author">-{{quote.author}}</div>
 </div>
