@@ -17,7 +17,6 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    Ng2FittextModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
