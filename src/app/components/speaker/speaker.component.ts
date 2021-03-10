@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {animate, state, style, transition, trigger} from "@angular/animations";
 import {IQuote} from "../models/i-quote";
 
@@ -28,18 +28,12 @@ import {IQuote} from "../models/i-quote";
     ]),
   ],
 })
-export class SpeakerComponent implements OnInit {
+export class SpeakerComponent {
 
   @Input()
   public isOpen;
 
   @Input()
   public quote: IQuote;
-
-  constructor() {
-  }
-
-  public ngOnInit():void {
-  }
 
 }

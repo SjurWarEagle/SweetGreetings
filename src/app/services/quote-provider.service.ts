@@ -70,13 +70,8 @@ export class QuoteProviderService {
     }
   ];
 
-  constructor() {
-  }
-
   public getNewQuote(): IQuote {
     const index = random(1, this.quotes.length - 1, false);
-    // console.log('index', index);
-    // console.log('this.quotes.length', this.quotes.length);
     return this.quotes[index];
   }
 }
